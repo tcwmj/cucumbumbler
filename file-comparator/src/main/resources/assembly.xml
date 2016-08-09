@@ -1,0 +1,28 @@
+<assembly>
+  <id>bin</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>/lib</outputDirectory>
+    </dependencySet>
+  </dependencySets>
+  <fileSets>
+    <fileSet>
+      <outputDirectory>/</outputDirectory>
+      <includes>
+        <include>log4j.properties</include>
+        <include>pom.xml</include>
+        <include>SystemConfig.xml</include>
+        <include>testng.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>src/test/java</directory>
+      <includes>
+        <include>*.java</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</assembly>
